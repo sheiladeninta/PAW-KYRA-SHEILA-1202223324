@@ -10,27 +10,27 @@
                 <div class="bg-grey rounded-circle d-flex align-items-center justify-content-center me-lg-5 mb-4 mb-lg-0 shadow" style="width: 200px; height: 200px; overflow: hidden;">
                     <!-- ==================4================== -->
                     <!-- Tampilkan logo profil -->
-                    <img src="" alt="Logo EAD" style="max-width: 80%; max-height: 80%;">
+                    <img src="{{ asset('images/logo-ead.png') }}" alt="Logo EAD" style="max-width: 80%; max-height: 80%;">
                 </div>
                 <!-- Text Content -->
                 <div class="text-center text-lg-start">
                     <!-- ==================5================== -->
                     <!-- Tampilkan salam dan nama -->
-                    <h1 class="fw-bold display-5 mb-2">, <span class="text-primary"></span>!</h1>
-                    <p class="lead text-muted mb-4">Selamat datang di dashboard mahasiswa Anda</p>
+                    <h1 class="fw-bold display-5 mb-2">{{ $salam }}, <span class="text-primary">{{ $nama }}</span>!</h1>
+                    <p class="lead text-muted mb-4">Selamat datang di dashboard mahasiswa.</p>
 
                     <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-4 fs-5 text-muted">
                         <div class="d-flex align-items-center">
                             <i class="bi bi-clock me-2 text-primary"></i>
                             <!-- ==================6================== -->
                             <!-- Tampilkan Waktu -->
-                            <span>Waktu akses: <strong class="text-dark"></strong></span>
+                            <span>Waktu akses: <strong class="text-dark">{{ $waktu }} WIB</strong></span>
                         </div>
                         <div class="d-flex align-items-center">
                             <i class="bi bi-calendar-event me-2 text-primary"></i>
                             <!-- ==================7================== -->
                             <!-- Tampilkan Tanggal -->
-                            <span>Tanggal akses: <strong class="text-dark"></strong></span>
+                            <span>Tanggal akses: <strong class="text-dark">{{ $tanggal }}</strong></span>
                         </div>
                     </div>
                 </div>
